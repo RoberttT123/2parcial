@@ -1,19 +1,16 @@
 *{
-    margin: 2;
-    padding: 2;
     box-sizing: border-box;
 }
 body{
-    align-items: center;
     flex-direction: column;
     min-height: 40em;
+    align-items: center;
     display: flex;
-    justify-content: center;
     font-family: sans-serif;
 }
 .card{
     width: 30%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 0px black;
     border-radius: 15px;
     margin-bottom: 1em;
 }
@@ -21,11 +18,33 @@ body{
     width: 100%;
     align-items: center;
     padding: 1em .5em;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 10px;
+;
     display: flex;
     justify-content: space-between;
-    color: #ffff;
+    color: white;
+}
+.card.tittle,.id{
+    display: flex;
+    align-items: center;
+}
+.card  .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 1em;
+}
+.card_footer{
+    position: relative;
+    color: #888888;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 .red{
     background-color: #EB5757;
@@ -35,45 +54,4 @@ body{
 }
 .blue{
     background-color: #21A1C9;
-}
-.card .card_header .tittle, .id{
-    display: flex;
-    align-items: center;
-}
-.card .card_header .circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid #ffff;
-    padding: 1em;
-}
-.card .card_header .tittle p{
-    margin-left: .5em;
-}
-.card .card_header .id p{
-    margin-right: 1em;
-}
-.card .card_section{
-    padding: 1em .10em;
-}
-.card .card_footer{
-    position: relative;
-    align-items: center;
-    color: #888888;
-    padding: .4em;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-}
-.card .card_footer:before{
-    content: '';
-    position: absolute;
-    width: 95%;
-    margin-left: 2.5%;
-    top: 0;
-    left: 0;
-    border-top: 1px solid #888888;
 }
